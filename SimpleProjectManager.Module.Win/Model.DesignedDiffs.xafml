@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Application>
+  <Views>
+    <DetailView Id="Person_DetailView">
+      <Layout>
+        <LayoutGroup Id="PhoneNumbers_Group" TextAlignMode="AlignLocal" />
+      </Layout>
+    </DetailView>
+    <DetailView Id="Customer_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main" >
+          <LayoutGroup Id="Testimonials_Group" TextAlignMode="AlignLocal" />
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+  </Views>
+  <ActionDesign>
+    <ActionToContainerMapping>
+      <ActionContainer Id="Menu">
+        <ActionLink ActionId="OpenObject" IsNewNode="True" />
+      </ActionContainer>
+      <ActionContainer Id="OpenObject">
+        <ActionLink ActionId="OpenObject" Removed="True" />
+      </ActionContainer>
+    </ActionToContainerMapping>
+  </ActionDesign>
+</Application>

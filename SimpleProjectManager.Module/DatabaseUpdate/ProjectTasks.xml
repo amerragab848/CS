@@ -1,0 +1,235 @@
+<?xml version="1.0"?>
+<ProjectTasks>
+	<ProjectTask Subject="TODO: Out-of-the Box Modular Architecture">
+		<Notes>OVERVIEW: https://documentation.devexpress.com/#eXpressAppFramework/CustomDocument112559
+
+DID YOU KNOW THAT...
+
+- XAF is essentially a set of best patterns &amp;amp; practices for building desktop LOB apps using DevExpress controls for both Windows and the Web?
+
+- XAF has a modularized Model/View/Controller (MVC) architecture with support for distributed scenarios (N-tier)?
+
+- XAF is really extensible and allows you to customize or even replace standard reusable blocks with your own versions?
+
+- XAF provides ready-to-use solutions included into modules which can be visually added/removed from your apps like you do when using a constructor?
+
+- XAF can save time for WinForms and ASP.NET developers by making them more productive and allowing them to mainly focus on coding their application business logic?
+
+- XAF has several third-party extensions built on top of the framework's infrastructure and extending its capabilities to target numerous business scenarios?
+
+- XAF was born in 2006 and has been used by thousands of developers around the world?
+
+- XAF provides a rich and seamless Visual Studio integration through various designers used to configure the settings and behavior of the whole application or individual modules; to build data model or UI screens?
+
+- XAF ships with a built-in functional testing framework allowing you to ensure quality of created applications?
+		</Notes>
+	</ProjectTask>
+
+	<ProjectTask  Subject="TODO: Data Management across Multiple Database Engines and ORM Tools" >
+		<Notes>OVERVIEW: http://www.devexpress.com/Products/NET/Application_Framework/features_xpo.xml
+
+DID YOU KNOW THAT...
+
+- XAF can be easily paired with an existing database with the help of the wizard that generates the entire data model by the existing database schema?
+
+- XAF allows you to create data models visually, from the existing database or completely in code (aka Model, Database, Code-First approaches)?
+
+- XAF works with Entity Framework?
+
+- XAF works with more than 14 popular database engines?
+
+- an XAF application can be connected to several databases at once?
+
+- XAF allows you to create your data model visually in the designers?
+
+- XAF ships with a Business Class Library that contains a number of reference data models like Person, Address, Task, etc. the majority of typical biz apps require?
+
+- XAF can create and populate the database schema and fill it with data for you, so that no DBA experience or SQL knowledge is required from you?
+
+- XAF provides built-in means and tools for supplying initial data to your database and updating it if there are changes in the new version?
+		</Notes>
+	</ProjectTask>
+
+	<ProjectTask Subject="TODO: Built-in Data Validation" >
+		<Notes>OVERVIEW: http://www.devexpress.com/Products/NET/Application_Framework/features_validation.xml
+
+DID YOU KNOW THAT...
+
+- XAF comes with a built-in validation module that provides numerous predefined validation rules that can be combined and customized at runtime to address a wide-range of business scenarios?
+
+- the XAF validation engine can extend your productivity by leveraging a declarative platform-agnostic approach and a number of predefined business rules?
+
+- XAF validity checking can either be triggered by the user manually or performed by the framework automatically at specified points, e.g., when saving or deleting data?
+
+- XAF validation rules can be added/deleted or customized at runtime via the easy-to-use UI?
+
+- the XAF data validation solution is independent from the user interface and allows you enforce your business rules regardless of the way your data is modified in the application?
+		</Notes>
+	</ProjectTask>
+
+
+	<ProjectTask  Subject="TODO: Elegant Data Representation" >
+		<Notes>OVERVIEW: http://www.devexpress.com/Products/NET/Application_Framework/features_datarepresentation.xml
+
+DID YOU KNOW THAT...
+
+- XAF allows you create a typical data-centric Microsoft Office-like application with the menu and navigation systems as well as with list and detail forms automatically bound to your data with no coding at all?
+
+- an XAF auto-generated UI can be customized at runtime by end-users?
+
+- XAF allows you perform large parts of the application configuration work (security, validation, reports, data analysis, appearance, layout, etc.)  at runtime via your application?
+
+- XAF implements CRUD operations and other UI interaction tasks via built-in Controllers for various platforms?
+
+- XAF built-in UI elements (like Property and List Editors, View Items, Actions and Action Containers, Templates, etc.) are technically very similar to custom user controls and helpers you might have created in the past so you can reuse your code across your project(s)?
+
+- you are able to display custom forms and controls in an XAF application exactly like you would  in a regular non-XAF app?
+
+- XAF allows you to resolve conflicts (merge changes or get the latest data from the database) if several users modify the same data?
+
+- XAF provides a built-in module that allows your end-users to change the current screen representation with another prebuilt variant (e.g., change from a calendar with appointments to a grid table view)?
+
+- XAF provides built-in modules that provide powerful and customizable editors for visualizing and analyzing your data via graphs/charts or cross/pivot tables?
+
+- XAF provides a built-in module for organizing and representing hierarchical  (tree-like) data in the UI?
+
+- XAF provides a reusable solution for representing and editing rich text data using the Hyper Text Markup Language (HTML)?
+
+- XAF provides a built-in solution for file manipulation (file attachment and storing in the database, saving, opening and downloading) needed in almost every business application?
+
+- XAF has a built-in scheduling solution based on the DevExpress Scheduler controls that will assist in switching between different date views, use a date navigator and various appointment techniques and so on?
+		</Notes>
+	</ProjectTask>
+
+	<ProjectTask Subject="TODO: Straightforward Application Configuration" >
+		<Notes>OVERVIEW: http://www.devexpress.com/Products/NET/Application_Framework/features_uimodel.xml
+
+DID YOU KNOW THAT...
+
+- XAF provides a settings store to allows developers, administrators and end-users to customize the application UI and behavior independently?
+
+- XAF automatically saves all user preferences and visual controls settings automatically?
+
+- XAF allows you to store application and user settings in the database, file system or any other store?
+
+- XAF allows you to perform much of the configuration work visually via a specialized designer available at both design and run time?
+		</Notes>
+	</ProjectTask>
+
+
+	<ProjectTask  Subject="TODO: Rock-Solid Application Security" >
+		<Notes>OVERVIEW: http://www.devexpress.com/Products/NET/Application_Framework/features_security.xml
+
+DID YOU KNOW THAT...
+
+- XAF contains a built-in security module that provides ready-to-use solutions for protecting sensitive information at the table, row and field levels?
+
+- XAF ships with standard role-based security that supports Active Directory authentication and permissions at the data type, record and field levels?
+
+- XAF security permissions can be configured via an easy-to-use UI at runtime or in code?
+
+- with XAF you do not need to be a security expert to enable system-wide security - simply drag and drop security components from the Toolbox in Visual Studio and you are ready to go?
+
+- it is possible to integrate the XAF security system with legacy data and security and authentication systems by providing your own custom permissions, user and role classes, authentication strategies and by using many other extensibility points?
+		</Notes>
+	</ProjectTask>
+
+
+	<ProjectTask Subject="TODO: Reporting Your Way/Data Analysis">
+		<Notes>OVERVIEW: http://www.devexpress.com/Products/NET/Application_Framework/features_datarepresentation.xml
+
+DID YOU KNOW THAT...
+
+- XAF provides a built-in Reporting module that seamlessly integrates the award winning DevExpress XtraReports Suite and empowers it with additional features?
+
+- the XAF Reporting module allows you to create reports at runtime and save them to the database as well as display them for end-users on all supported platforms with little or no effort?
+
+- XAF by default allows you to export data from various controls into numerous formats or print it without writing any code?
+
+- XAF provides a built-in module that allows your end-users to create hybrid analysis reports (based on the chart and pivot grid controls), store them in the database and view/print them later?
+
+- XAF provides a built-in KPI module that allows your end-users to measure and visualize dynamic business processes, store created analysis reports in the database and view/print them later?
+
+- XAF KPI modules can be used to compare important characteristics of processes at different periods of time (for instance, the current month sales against the previous one) and of course drilldown when deeper data analysis is required?
+
+- XAF data analysis solutions provide end-users with an extremely intuitive experience in slicing and presenting data, and deliver numerous layout customization options with total end-user control over each individual on-screen report?
+		</Notes>
+	</ProjectTask>
+
+
+	<ProjectTask Subject="TODO: Managing Business Processes">
+		<Notes>OVERVIEW: http://www.devexpress.com/Products/NET/Application_Framework/features_workflow.xml
+
+DID YOU KNOW THAT...
+
+- XAF provides built-in solutions for managing business processes suitable for both lightweight and complex workflow scenarios?
+
+- XAF simplifies the use of the Workflow Foundation platform, as all you'll need to know are general concepts associated with workflow design?
+
+- XAF provides a built-in Workflow module that seamlessly integrates the Microsoft Windows Workflow Foundation and facilitates creation, execution and deployment of workflows, not to mention the capability of persisting workflow states into more than 14 popular database engines?
+
+- the XAF workflow solution allows you to workflow activities at both design and run time using a visual designer?
+
+- the XAF workflow module ships with a set of pre-built workflow activities for addressing mundane business tasks?
+
+- XAF, besides WF integration, provides a built-in State Machine module that can be used for lightweight scenarios, like managing a business entity's status (draft, completed...)?
+
+- XAF brings end-users a rich set of options to create, share and customize state machines?
+		</Notes>
+	</ProjectTask>
+
+
+	<ProjectTask Subject="TODO: Localization" >
+		<Notes>OVERVIEW: http://www.devexpress.com/Products/NET/Application_Framework/features_localization.xml
+
+DID YOU KNOW THAT...
+
+- XAF supports all standard localization methodologies and also provides its own unique localization solution that addresses the problems associated with the traditional approaches to localizing apps?
+
+- XAF provides an easy-to-use localization wizard with online translation options (using Microsoft, Google, etc)?
+
+- XAF allows your end-users (non-programmers) to quickly import/export translation changes without leaving your application?
+		</Notes>
+	</ProjectTask>
+
+
+	<ProjectTask
+		Subject="TODO: Conditional UI Customization">
+		<Notes>OVERVIEW: http://www.devexpress.com/Products/NET/Application_Framework/features_appearance.xml
+
+DID YOU KNOW THAT...
+
+- XAF provides a platform and control-agnostic approach to declaratively define conditional customization rules for control color highlighting, changing availability and visibility, font style, etc.?
+
+- XAF allows setting UI element appearance settings via declarative rules at runtime without recompiling your application?
+
+- XAF allows you to use a single and easy-to-use declarative approach for changing the appearance of controls instead of learning various controls and techniques for different platforms?
+
+- XAF provides a built-in module that allows you to color, highlight, emphasize, hide or disable certain UI elements when your data satisfies a given criteria?
+		</Notes>
+	</ProjectTask>
+
+
+	<ProjectTask
+		Subject="TODO: Help &amp; Support &amp; Community" >
+		<Notes>
+      OVERVIEW:
+      http://www.devexpress.com/Support/Center/
+      http://www.devexpress.com/Products/NET/Application_Framework/xaf-community.xml
+
+      DID YOU KNOW THAT...
+
+      - XAF has a large and active developers community around the world - customers from more than 100 countries?
+
+      - more than one thousand of technical tickets from XAF customers are answered per month in the DevExpress Support Center?
+
+      - TOP 10 XAF developers countries are USA, Germany, UK, India, Russia, Australia, Netherlands, Brazil, Canada, and China?
+
+      - XAF has a huge support knowledge base with more than a thousand examples and help articles and countless answered questions (more than 20K) from other customers that cover almost each and every scenario?
+
+      - XAF developers can be directly reached not only from the DevExpress Support Center, but also in XAF groups on social networks (Facebook, LinkedIn, Twitter)?
+
+      - you can find the latest news about XAF and its community not only from the DevExpress Support Center and blogs, but also from XAF groups in social networks (Facebook, LinkedIn, Twitter)?
+    </Notes>
+	</ProjectTask>
+</ProjectTasks>

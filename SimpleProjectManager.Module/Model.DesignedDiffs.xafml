@@ -1,0 +1,198 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Application Title="SimpleProjectManager">
+  <ActionDesign>
+    <Actions>
+      <Action Id="MarkCompleted" Caption="Done!" ToolTip="Mark this task as completed" ShortCaption="Mark Completed" />
+    </Actions>
+    <ActionToContainerMapping>
+      <ActionContainer Id="Edit">
+        <ActionLink ActionId="Delete" Index="3" IsNewNode="True" Removed="True" />
+        <ActionLink ActionId="Cancel" Index="4" IsNewNode="True" />
+        <ActionLink ActionId="MarkCompleted" IsNewNode="True" />
+      </ActionContainer>
+      <ActionContainer Id="RecordEdit">
+        <ActionLink ActionId="MarkCompleted" Removed="True" />
+      </ActionContainer>
+      <ActionContainer Id="UndoRedo">
+        <ActionLink ActionId="Cancel" Removed="True" />
+      </ActionContainer>
+    </ActionToContainerMapping>
+  </ActionDesign>
+
+  <BOModel>
+    <Class Name="DevExpress.Persistent.BaseImpl.Person" ImageName="BO_Employee" Caption="Employee" />
+  </BOModel>
+
+  <NavigationItems StartupNavigationItem="ProjectTask_ListView" NavigationStyle="TreeList">
+    <Items>
+      <Item Id="Planning" Index="0" ImageName="BO_Scheduler" >
+        <Items>
+          <Item Id="Project_ListView" Index="0" />
+          <Item Id="ProjectTask_ListView" Index="1" />
+          <Item Id="Employee" ViewId="Person_ListView" Index="2" IsNewNode="True"/>
+        </Items>
+      </Item>
+      <Item Id="Marketing" Index="1" ImageName="BO_Lead" />
+    </Items>
+  </NavigationItems>
+
+  <Views>
+    <DetailView Id="Person_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main" ShowCaption="True" Caption="Main" CaptionLocation="Top" Direction="Horizontal" Index="0" RelativeSize="51" IsNewNode="True">
+          <LayoutGroup Id="SubDetails" ShowCaption="False" Index="0" RelativeSize="43" IsNewNode="True">
+            <LayoutItem Id="FullName" ViewItem="FullName" Index="0" RelativeSize="15" IsNewNode="True" />
+            <LayoutItem Id="Email" ViewItem="Email" Index="1" RelativeSize="11" IsNewNode="True" />
+            <LayoutItem Id="FirstName" ViewItem="FirstName" Index="2" RelativeSize="11" IsNewNode="True" />
+            <LayoutItem Id="MiddleName" ViewItem="MiddleName" Index="3" RelativeSize="11" IsNewNode="True" />
+            <LayoutItem Id="LastName" ViewItem="LastName" Index="4" RelativeSize="11" IsNewNode="True" />
+            <LayoutItem Id="Birthday" ViewItem="Birthday" Index="5" RelativeSize="11" IsNewNode="True" />
+            <LayoutItem Id="Address1" ViewItem="Address1" Index="6" RelativeSize="11" IsNewNode="True" />
+            <LayoutItem Id="Address2" ViewItem="Address2" Index="7" RelativeSize="15" IsNewNode="True" />
+          </LayoutGroup>
+          <LayoutItem Id="Photo" ViewItem="Photo" CaptionLocation="Top" Index="1" RelativeSize="53" IsNewNode="True" />
+        </LayoutGroup>
+        <LayoutGroup Id="PhoneNumbers_Group" ShowCaption="True" Caption="Phone Numbers" Index="1" RelativeSize="48" IsNewNode="True">
+          <LayoutItem Id="PhoneNumbers" ViewItem="PhoneNumbers" Index="0" RelativeSize="85" IsNewNode="True" />
+        </LayoutGroup>
+        <LayoutGroup Id="Main" Removed="True" />
+      </Layout>
+    </DetailView>
+
+    <ListView Id="Person_ListView" PreviewColumnName="Email">
+      <Columns>
+        <ColumnInfo Id="Birthday" Index="-1" />
+        <ColumnInfo Id="FirstName" Index="-1" />
+        <ColumnInfo Id="LastName" Index="-1" />
+        <ColumnInfo Id="MiddleName" Index="-1" />
+        <ColumnInfo Id="Email" Index="-1"/>
+        <ColumnInfo Id="FullName" Width="350" Index="0" />
+        <ColumnInfo Id="Photo" Width="75" Index="1" ImageEditorCustomHeight="75"/>
+      </Columns>
+    </ListView>
+    <DetailView Id="Project_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main" RelativeSize="100">
+          <LayoutGroup Id="SimpleEditors" RelativeSize="13">
+            <LayoutGroup Id="Project" RelativeSize="100">
+              <LayoutItem Id="Name" RelativeSize="51" />
+              <LayoutItem Id="Manager" RelativeSize="48" />
+            </LayoutGroup>
+          </LayoutGroup>
+          <LayoutGroup Id="SizeableEditors" RelativeSize="14">
+            <LayoutItem Id="Description" RelativeSize="100" />
+          </LayoutGroup>
+          <LayoutGroup Id="Tasks_Group" RelativeSize="71">
+            <LayoutItem Id="Tasks" RelativeSize="88" />
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="ProjectTask_DetailView" DefaultFocusedItem="Status">
+      <Layout>
+        <LayoutGroup Id="Main" RelativeSize="100">
+          <LayoutGroup Id="ProjectTask" ShowCaption="True" Caption="Main" Direction="Vertical" Index="0" RelativeSize="27" IsNewNode="True">
+            <LayoutItem Id="Subject" ViewItem="Subject" Index="0" RelativeSize="20" IsNewNode="True" />
+            <LayoutItem Id="Status" ViewItem="Status" Index="1" RelativeSize="16" IsNewNode="True" />
+            <LayoutGroup Id="SubGroup1" ShowCaption="False" Direction="Horizontal" Index="2" IsNewNode="True">
+              <LayoutGroup Id="ProjectTask_col1" ShowCaption="False" Index="0" RelativeSize="70" IsNewNode="True">
+                <LayoutItem Id="AssignedTo" ViewItem="AssignedTo" Index="0" IsNewNode="True" />
+              </LayoutGroup>
+              <LayoutGroup Id="SubGroup2" ShowCaption="False" Index="1" RelativeSize="30" IsNewNode="True">
+                <LayoutItem Id="StartDate" ViewItem="StartDate" Index="0" IsNewNode="True" />
+                <LayoutItem Id="EndDate" ViewItem="EndDate" Index="1" IsNewNode="True" />
+              </LayoutGroup>
+            </LayoutGroup>
+          </LayoutGroup>
+          <LayoutGroup Id="SizeableEditors" RelativeSize="72" Caption="SizeableEditors">
+            <LayoutGroup Id="Item1" ShowCaption="True" Caption="Description" CaptionLocation="Top" Index="0" RelativeSize="100" IsNewNode="True">
+              <LayoutItem Id="Notes" ViewItem="Notes" Index="0" RelativeSize="82" IsNewNode="True" />
+            </LayoutGroup>
+            <LayoutItem Id="Notes" Removed="True" />
+          </LayoutGroup>
+          <LayoutGroup Id="SimpleEditors" Removed="True" />
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+
+    <ListView Id="ProjectTask_ListView">
+      <Columns>
+        <ColumnInfo Id="Subject" Width="800" />
+        <ColumnInfo Id="Status" Width="200" />
+        <ColumnInfo Id="AssignedTo" Width="250" />
+        <ColumnInfo Id="StartDate" Width="100" />
+        <ColumnInfo Id="EndDate" Width="100" />
+        <ColumnInfo Id="Project" Index="-1" />
+      </Columns>
+    </ListView>
+    <ListView Id="Customer_ListView" IsFooterVisible="True">
+      <Columns>
+        <ColumnInfo Id="FirstName" Index="-1" />
+        <ColumnInfo Id="LastName" Index="-1" />
+        <ColumnInfo Id="Company" Index="-1" />
+        <ColumnInfo Id="Email" Index="2" />
+        <ColumnInfo Id="Occupation" Index="-1" />
+        <ColumnInfo Id="FullName" SortOrder="Descending" Index="1"/>
+        <ColumnInfo Id="Photo" Index="0">
+          <Summary>
+            <ColumnSummaryItem Id="Summary0" Index="0" SummaryType="Count" IsNewNode="True" />
+          </Summary>
+        </ColumnInfo>
+      </Columns>
+    </ListView>
+    <DetailView Id="Customer_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main" RelativeSize="100">
+          <LayoutGroup Id="SimpleEditors" RelativeSize="35">
+            <LayoutGroup Id="Customer" RelativeSize="100">
+              <LayoutGroup Id="Customer_col1" RelativeSize="48">
+                <LayoutItem Id="FullName" ViewItem="FullName" Index="0" RelativeSize="19" IsNewNode="True" />
+                <LayoutItem Id="Company" Index="1" RelativeSize="15" ViewItem="Company" />
+                <LayoutItem Id="Occupation" ViewItem="Occupation" Index="2" RelativeSize="15" IsNewNode="True" />
+                <LayoutItem Id="FirstName" Index="3" RelativeSize="15" ViewItem="FirstName" />
+                <LayoutItem Id="LastName" Index="4" RelativeSize="15" ViewItem="LastName" />
+                <LayoutItem Id="Email" Index="5" RelativeSize="19" ViewItem="Email" />
+              </LayoutGroup>
+              <LayoutGroup Id="Customer_col2" RelativeSize="48">
+                <LayoutItem Id="Photo" Index="0" RelativeSize="100" ViewItem="Photo" />
+                <LayoutItem Id="FullName" ViewItem="FullName" Removed="True" />
+                <LayoutItem Id="Occupation" ViewItem="Occupation" Removed="True" />
+              </LayoutGroup>
+            </LayoutGroup>
+          </LayoutGroup>
+          <LayoutGroup Id="Testimonials_Group" Direction="Vertical" RelativeSize="64">
+            <LayoutItem Id="Testimonials" RelativeSize="90" ViewItem="Testimonials" />
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <ListView Id="Testimonial_ListView" IsFooterVisible="True">
+      <Columns>
+        <ColumnInfo Id="Customer" Width="200" >
+          <Summary>
+            <ColumnSummaryItem Id="Summary0" Index="0" SummaryType="Count" IsNewNode="True" />
+          </Summary>
+        </ColumnInfo>
+        <ColumnInfo Id="Tags" Width="100" Index="1" />
+      </Columns>
+      <SplitLayout SplitterPosition="400" />
+    </ListView>
+    <ListView Id="Customer_Testimonials_ListView">
+      <Columns>
+        <ColumnInfo Id="Customer" Index="-1" />
+        <ColumnInfo Id="Tags" Width="100" Index="0" />
+      </Columns>
+      <SplitLayout SplitterPosition="200" />
+    </ListView>
+    <DetailView Id="Testimonial_DetailView">
+      <Items>
+        <PropertyEditor Id="Customer" PropertyName="Customer" IsNewNode="True" />
+      </Items>
+      <Layout>
+        <LayoutGroup Id="Main">
+          <LayoutItem Id="Customer" ViewItem="Customer" Index="0" IsNewNode="True" />
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+  </Views>
+</Application>

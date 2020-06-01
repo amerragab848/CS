@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{218430FC-ABCA-47D3-94BD-F8E3BFF32CCF}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>SimpleProjectManager.Win</RootNamespace>
+    <AssemblyName>SimpleProjectManager.Win</AssemblyName>
+    <ApplicationIcon>ExpressApp.ico</ApplicationIcon>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <LangVersion>5</LangVersion>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <LangVersion>5</LangVersion>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ReferencePath>..\packages\EntityFramework.6.1.3\lib\net45\</ReferencePath>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevExpress.Office.v19.1.Core">
+    <Private>False</Private></Reference>
+    <Reference Include="DevExpress.RichEdit.v19.1.Core">
+    <Private>False</Private></Reference>
+    <Reference Include="DevExpress.RichEdit.v19.1.Export">
+    <Private>False</Private></Reference>
+    <Reference Include="DevExpress.Sparkline.v19.1.Core">
+    <Private>False</Private></Reference>
+    <Reference Include="DevExpress.XtraPrinting.v19.1">
+    <Private>False</Private></Reference>
+    <Reference Include="DevExpress.XtraScheduler.v19.1">
+    <Private>False</Private></Reference>
+    <Reference Include="DevExpress.BonusSkins.v19.1">
+    <Private>False</Private></Reference>
+    <Reference Include="DevExpress.Data.v19.1">
+    <Private>False</Private></Reference>
+    <Reference Include="DevExpress.ExpressApp.ConditionalAppearance.v19.1">
+    <Private>False</Private></Reference>
+    <Reference Include="DevExpress.ExpressApp.EF.v19.1">
+    <Private>False</Private></Reference>
+    <Reference Include="DevExpress.ExpressApp.Images.v19.1">
+    <Private>False</Private></Reference>
+    <Reference Include="DevExpress.ExpressApp.Xpo.v19.1">
+    <Private>False</Private></Reference>
+    <Reference Include="DevExpress.ExpressApp.v19.1">
+    <Private>False</Private></Reference>
+    <Reference Include="DevExpress.ExpressApp.Validation.v19.1">
+    <Private>False</Private></Reference>
+    <Reference Include="DevExpress.ExpressApp.Validation.Win.v19.1">
+    <Private>False</Private></Reference>
+    <Reference Include="DevExpress.ExpressApp.Win.v19.1">
+    <Private>False</Private></Reference>
+    <Reference Include="DevExpress.Persistent.Base.v19.1">
+    <Private>False</Private></Reference>
+    <Reference Include="DevExpress.Persistent.BaseImpl.v19.1">
+    <Private>False</Private></Reference>
+    <Reference Include="DevExpress.Printing.v19.1.Core">
+    <Private>False</Private></Reference>
+    <Reference Include="DevExpress.Utils.v19.1">
+    <Private>False</Private></Reference>
+    <Reference Include="DevExpress.Xpo.v19.1">
+    <Private>False</Private></Reference>
+    <Reference Include="DevExpress.XtraBars.v19.1">
+    <Private>False</Private></Reference>
+    <Reference Include="DevExpress.XtraEditors.v19.1">
+    <Private>False</Private></Reference>
+    <Reference Include="DevExpress.XtraGrid.v19.1">
+    <Private>False</Private></Reference>
+    <Reference Include="DevExpress.XtraLayout.v19.1">
+    <Private>False</Private></Reference>
+    <Reference Include="DevExpress.XtraNavBar.v19.1">
+    <Private>False</Private></Reference>
+    <Reference Include="DevExpress.XtraTreeList.v19.1">
+    <Private>False</Private></Reference>
+    <Reference Include="EntityFramework">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System">
+      <Name>System</Name>
+    <Private>False</Private></Reference>
+    <Reference Include="System.ComponentModel.DataAnnotations"><Private>False</Private></Reference>
+    <Reference Include="System.configuration">
+    <Private>False</Private></Reference>
+    <Reference Include="System.Data">
+      <Name>System.Data</Name>
+    <Private>False</Private></Reference>
+    <Reference Include="System.Drawing">
+      <Name>System.Drawing</Name>
+    <Private>False</Private></Reference>
+    <Reference Include="System.Windows.Forms">
+      <Name>System.Windows.Forms</Name>
+    <Private>False</Private></Reference>
+    <Reference Include="System.Xml">
+      <Name>System.XML</Name>
+    <Private>False</Private></Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="XafDemoSplashScreen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="XafDemoSplashScreen.Designer.cs">
+      <DependentUpon>XafDemoSplashScreen.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WinApplication.resx">
+      <DependentUpon>WinApplication.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="WinApplication.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="WinApplication.Designer.cs">
+      <DependentUpon>WinApplication.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="XafDemoSplashScreen.resx">
+      <DependentUpon>XafDemoSplashScreen.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="App.config" />
+    <EmbeddedResource Include="Images\SplashScreenImage.svg" />
+    <Content Include="Model.xafml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="ExpressApp.ico" />
+    <Content Include="Images\ReadMe.txt" />
+    <Content Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\SimpleProjectManager.Module.Win\SimpleProjectManager.Module.Win.csproj">
+      <Project>{CD16A325-8918-4F93-A02B-2F088AE62868}</Project>
+      <Name>SimpleProjectManager.Module.Win</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SimpleProjectManager.Module\SimpleProjectManager.Module.csproj">
+      <Project>{9D01B85F-11B5-4A7A-B456-66FB791529F5}</Project>
+      <Name>SimpleProjectManager.Module</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

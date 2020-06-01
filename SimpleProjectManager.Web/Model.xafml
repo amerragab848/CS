@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Application>
+  <Views>
+    <ListView Id="Customer_ListView" PageSize="10"/>
+		<ListView Id="Testimonial_ListView" PageSize="10" InlineEditMode="EditForm">
+			<Columns>
+				<ColumnInfo Id="Quote" Index="1"/>
+			</Columns>
+		</ListView>
+		<ListView Id="Customer_Testimonials_ListView" InlineEditMode="EditForm">
+			<Columns>
+				<ColumnInfo Id="Quote" Index="1" />
+			</Columns>
+		</ListView>
+	</Views>
+</Application>
